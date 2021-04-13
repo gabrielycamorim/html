@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<title>Ver usuário</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+         
+	.table-responsive{
+		width: 100% !important;
+	  }
+	  
+	  .table {
+		 
+		  width: 50% !important; /*Importante manter o !important rs */
+		  margin: auto;
+	  }
+      </style>
+      </head>
+      <body>
+          <br>
+              <div class="wrap-login100" style="margin-left: 425px;">
+              <div class="container-login100-form-btn" style="margin: left;">
+              <button class="login100-form-btn" type="submit" id="consultar" value="Consultar" onclick="mostrarTabela()">
+                      Mostrar Tabela 
+                  </button>
+              </div>
+              </div>
+              
+      <div class="container">
+        <div class="table-responsive">
+            <br>
+            <table class="table" id="mostrarTable" >
+                <thead>
+                    
+                          <tr class="cliente"> 
+                          <th class="cor">Usuário</th>
+                          <th class="cor">Senha</th>
+                          <th class="cor">Email</th>
+                          <th class="cor">CPF</th>
+                          <th class="cor">Nome</th>
+                          <th class="cor">Id</th>
+                          <th class="cor">Editar</th>
+                          <th class="cor">Deletar</th>
+                          </tr>
+                          
+                        
+                      </thead>
+                      <tbody id="tabela"></tbody>
+                          </table>
+                      
+        </div>
+      </div>
+
+      <script src="js/verUser.js"></script>
+		
+	
+
+</body>
+</html>

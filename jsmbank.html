@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<style> 
+input[type=text] {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+form{
+    float: left;
+    padding-left: 10px;
+}
+div{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=submit]{ 
+
+    width: 100%;
+    background-color: #6E6E6E;             
+    color: white; 
+    padding: 14px 20px; 
+    margin: 8px 0; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;}
+.aa{
+    padding-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+<div>
+<div class="aa">
+<fieldset>
+
+<legend>Código do Banco remetente</legend>
+
+<p>Nome do remetente</p>
+  <input type="text" name="search" placeholder="">
+
+<p>Comp</p>
+  <input type="number" name="search" placeholder="">
+
+<p>Banco</p>
+  <input type="number" name="search" placeholder="">
+  
+<p>Agência</p>
+  <input type="number" name="search" placeholder="">
+  
+<p>Nº conta do remetente</p>
+  <input type="number" name="search" placeholder="">
+  
+<p>CNPJ/CPF</p>
+  <input type="number" name="search" placeholder="CPF">
+
+</fieldset>
+</div>
+<div class="aa">
+<fieldset>
+    <legend>Código do Banco Destinário</legend>
+
+<p>Nome do destinário</p>
+  <input type="text" name="search" placeholder="Destinario">
+
+<p>Comp</p>
+  <input type="number" name="search" placeholder="Comp">
+
+<p>Banco</p>
+  <input type="text" name="search" placeholder="Banco">
+  
+<p>Agência</p>
+  <input type="text" name="search" placeholder="Agência">
+  
+<p>Nº conta do destinário</p>
+  <input type="number" name="search" placeholder="Conta do destinario">
+  
+<p>CNPJ/CPF</p>
+  <input type="number" name="search" placeholder="CPF">
+
+</fieldset>
+</div>
+
+<div class="aa">
+<fieldset>
+    <legend>Finalidade</legend>
+  <input type="radio" name="pagamento" value="male" checked> 01- Crédito em conta-corrente<br>
+  <input type="radio" name="pagamento" value="alu"> 02- Pagamento de aluguel/condomínio<br>
+  <input type="radio" name="pagamento" value="tit"> 03- Pagamento de duplicates/títulos<br> 
+  <input type="radio" name="pagamento" value="divi" checked> 04- Pagamentos de dividendos<br>
+  <input type="radio" name="pagamento" value="men"> 05- Pagamentos de mensalidades escolares<br>
+  <input type="radio" name="pagamento" value="sal"> 06- Pagamento de salários<br>
+  <input type="radio" name="pagamento" value="for" checked> 07- Pagamento de fornecedores/honorários<br>
+  <input type="radio" name="pagamento" value="camb"> 08- Operações de câmbio/títulos/bolsa de valores<br>
+  <input type="radio" name="pagamento" value="arre"> 09- Repasse de arrecadação/pagamentos de tributos<br>
+  <input type="radio" name="pagamento" value="int" checked> 10- Transferência internacional em reais<br>
+  <input type="radio" name="pagamento" value="pou"> 11- DOC para poupança <br>
+  <input type="radio" name="pagamento" value="jud"> 12- Crédito judicial<br> 
+  <input type="radio" name="pagamento" value="outros" checked> 13- Outros<br> 
+</fieldset>
+</div>
+<div class="aa">
+<fieldset>
+
+<legend>Valor da transferência</legend>
+
+<p>Atributo/Referencia a finalidade</p>
+  <input type="text" name="search" placeholder="finalidade">
+  <p>Valor</p>
+  <input type="number" name="search" placeholder="valor">
+  <p>Valor em extenso</p>
+  <input type="number" name="search" placeholder="Em extenso">
+  <input type="submit" value="Submit">
+  </fieldset>
+  </div>
+</form>
+</div>
+</body>
+</html>
